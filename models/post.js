@@ -1,23 +1,23 @@
 const db = require("./banco")
 
-const Agendamentos = db.sequelize.define("Agendamentos", {
+const Agendamentos = db.sequelize.define('agendamentos',{
     nome:{
         type: db.Sequelize.STRING
     },
     telefone:{
-        type: db.Sequelize.STRING
+        type: db.Sequelize.INTEGER
     },
     origem:{
-        type: db.Sequelize.ENUM('Celular','Telefone-fixo','Outros')
+        type: db.Sequelize.STRING
     },
-    data:{
-        type: db.Sequelize.DATEONLY
+    data_contato:{
+        type: db.Sequelize.DATE
     },
     observacao:{
         type: db.Sequelize.TEXT
     }
 })
 
-//Agendamentos.sync({force:true})    //JÁ EXECUTADO
+//Agendamentos.sync({force:true})
 
 module.exports = Agendamentos
