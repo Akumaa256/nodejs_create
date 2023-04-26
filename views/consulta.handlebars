@@ -41,7 +41,7 @@
             &nbsp;
         </div>
         <div class="col bg-white">
-            <p class="text-start fs-5">Cadastrar - Agendamento de Potenciais Clientes</p>
+            <p class="text-start fs-5">Consultar - Agendamento de Potenciais Clientes</p>
             <p class="text-start fs-6">Sistema utilizado para agendamento de serviços.</p>
             <p>
             <div class="container text-center">
@@ -57,9 +57,6 @@
                     </div>
                     <div class="col text-light">
                         Data de Contato
-                    </div>
-                    <div class="col text-light">
-                        Observação
                     </div>
                     <div class="col text-light">
                         Observação
@@ -90,6 +87,11 @@
                         </div>
                         <div class="col">
                             {{Opções}}
+                            <div  class="mb-3 text-start">
+                                <a href="/editar/{{id}}">
+                                    <button class="btn btn-success">✏️</button>
+                                </a>
+                            </div>
                             <div  class="mb-3 text-start">
                                 <a href="/excluir/{{id}}">
                                     <button class="btn btn-danger">🗑️</button>
